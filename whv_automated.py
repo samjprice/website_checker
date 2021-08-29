@@ -1,4 +1,4 @@
-# This is my manual checker which always sends notifications
+# This is my automated checker which doesn't send notifications in the case of no update
 
 import bs4
 import requests
@@ -45,7 +45,8 @@ def main():
     except:
         message = f"Error - see website: \n{site_url}"
 
-    Notify("Japan Working Holiday Visa", message, APP_NAME).send()
+    if message != "No Update":
+        Notify("Japan Working Holiday Visa", message, APP_NAME).send()
 
 
 if __name__ == "__main__":
