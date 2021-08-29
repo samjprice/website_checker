@@ -1,8 +1,8 @@
 # Japan-WHV-Check
 Tool for alerting me to the change in status for Japan accepting Working Holiday Visas 
 
-Repos used: requests, bs4, notify-py
+I now intend to make 2 variations of the tool
+WHV Manual Check - for launching from my desktop with notifications for all eventualities
+WHV Automated - for background checking without notifications if nothing has changed
 
-Formatted in cron to run every minute with the following:
-* * * * * sudo -u sam DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus python ~/Japan-WHV-Check/WHV.py
-
+I use Manjaro so I formatted it in cron using the following as per https://wiki.archlinux.org/title/Desktop_notifications
