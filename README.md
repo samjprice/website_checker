@@ -1,4 +1,4 @@
-# Japan-WHV-Check
+# japan_whv_check
 Tool for alerting me to the change in status for Japan accepting Working Holiday Visas 
 
 I now intend to make 2 variations of the tool
