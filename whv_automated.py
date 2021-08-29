@@ -47,6 +47,8 @@ def main():
 
     if message != "No Update":
         Notify("Japan Working Holiday Visa", message, APP_NAME).send()
+    
+    return message
 
 
 if __name__ == "__main__":
