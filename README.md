@@ -1,5 +1,5 @@
 # japan_whv_check
-Tool for alerting me to the change in status for Japan accepting Working Holiday Visas 
+Tool for alerting me to the change in status for Japan accepting Working Holiday Visas and my first python script.
 
 I now intend to make 2 variations of the tool
 whv_manual_check - for launching from my desktop with notifications for all eventualities
