@@ -7,7 +7,7 @@ from notifypy import Notify
 
 
 APP_NAME = "WHV Notifier"
-site_url = "https://www.uk.emb-japan.go.jp/itpr_en/index_000072.html"
+SITE_URL = "https://www.uk.emb-japan.go.jp/itpr_en/index_000072.html"
 
 
 def scrape_site(site_url: str) -> [str, str]:
@@ -33,17 +33,17 @@ def main():
     restriction = "Due to restrictions relating to the coronavirus pandemic, we are not able to take applications for the Working Holiday Visa."
 
     try:
-        warning, last_updated = scrape_site(site_url)
+        warning, last_updated = scrape_site(SITE_URL)
 
         if warning == restriction:
             if last_updated == target_date:
                 message = "No Update"
             else:
-                message = f"Date Updated, working holiday visas still not available - see website: \n{site_url}"
+                message = f"Date Updated, working holiday visas still not available - see website: \n{SITE_URL}"
         else:
-            message = f"See website for update: \n{site_url}"
+            message = f"See website for update: \n{SITE_URL}"
     except:
-        message = f"Error - see website: \n{site_url}"
+        message = f"Error - see website: \n{SITE_URL}"
 
     Notify("Japan Working Holiday Visa", message, APP_NAME).send()
 
