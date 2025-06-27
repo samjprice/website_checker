@@ -6,7 +6,7 @@ import requests
 from notifypy import Notify
 
 
-APP_NAME = "WHV Notifier"
+APP_NAME = "Website Checker"
 SITE_URL = "https://www.uk.emb-japan.go.jp/itpr_en/index_000072.html"
 
 

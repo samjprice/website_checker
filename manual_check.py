@@ -4,7 +4,7 @@ import bs4
 import requests
 
 from notifypy import Notify
-from whv_automated import APP_NAME, SITE_URL, main
+from automated import APP_NAME, SITE_URL, main
 
 main()
 
